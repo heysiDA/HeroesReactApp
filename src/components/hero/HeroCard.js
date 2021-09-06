@@ -5,10 +5,11 @@ const HeroCard = ({
       id,
       superhero,
       alter_ego,
-      characters
+      characters,
+      width = ''
   }) => {
     return (
-        <div className="card ms-3 mr-2 mb-3 col-md-3 col-sm-3 col-10" style={{maxWidth: 540}}>
+        <div className="card ms-3 mr-2 mb-3 col-md-3 col-sm-3 col-10" style={{maxWidth: 540, width: width}}>
             <div className={'row no-gutters'}>
                 <div className={'col-md-4'}>
                     <img src={`./assets/heroes/${id}.jpg`} className="card-img-top" alt={superhero}/>
